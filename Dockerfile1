@@ -2,4 +2,3 @@ FROM ubuntu22.04
 RUN apt-get update
 RUN apt-get install nginx -y
 CMD echo ["nginx","-g","daemon off;"]
-
