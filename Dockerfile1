@@ -1,2 +1,5 @@
-FROM ubuntu22.04
-CMD echo "Hello my first Docker"
+ROM ubuntu22.04
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD echo ["nginx","-g","daemon off;"]
+
