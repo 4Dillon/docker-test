@@ -1,0 +1,2 @@
+FROM ubuntu22.04
+CMD echo "Hello my first Docker"
