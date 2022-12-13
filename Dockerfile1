@@ -1,8 +1,7 @@
 FROM ubuntu:22.04
 
-WORKDIR /var/www/html/
 COPY files/index.html .
-
+WORKDIR /var/www/html/
 RUN apt-get update
 RUN apt-get install nginx -y
 
