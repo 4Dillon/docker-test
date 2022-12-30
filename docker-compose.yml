@@ -1,19 +1,19 @@
 version: '3.5'
 services:
-  web-servers:
-    image: nginx:stable
-    container_name: nginx
-    volumes:
-      - '/opt/web/html:/var/www/html'
-      - '/opt/web/pictures:/var/www/pictures'
-      - 'nginx-config:/var/www/configs'
-    environment:
-      - 'NGINX_HOST=web.4dillon.de'
-      - 'NGINX_PORT=80'
-    ports:
-      - '80:80'
-      - '443:443'
-    restart: unless-stopped
+   web-servers:
+     image: nginx:stable
+     container_name: nginx
+     volumes:
+       - '/opt/web/html:/var/www/html'
+       - '/opt/web/pictures:/var/www/pictures'
+       - 'nginx-config:/var/www/configs'
+     environment:
+       - 'NGINX_HOST=web.4dillon.de'
+       - 'NGINX_PORT=80'
+     ports:
+       - '80:80'
+       - '443:443'
+     restart: unless-stopped
 volumes:
   nginx-config:
 networks:
